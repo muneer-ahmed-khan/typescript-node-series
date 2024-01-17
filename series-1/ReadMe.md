@@ -50,3 +50,10 @@ console.log(this === module.exports); // true
 - The asynchronous function always takes a error-first callback as its last argument.
 
 - With the help of a built-in utility called promisify, we can change the writeFile function in a way that it returns a promise.
+
+### To create a new file 
+``` npm start -- touch ./file.txt ```
+
+### To read content of a file 
+``` npm start -- cat ./file.txt ```
+
