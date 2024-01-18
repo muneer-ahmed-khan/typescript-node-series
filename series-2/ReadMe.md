@@ -1,6 +1,11 @@
 ### Usage
 - The ```utils``` folder contain multiple example of event emitter class. 
 
+- Uncomment the import statement of any imported utils file in ```main.js``` to see the result.
+
+- run the program with command
+``` npm start ```
+
 ### Main Points
 -  A lot of Node.js core depends on event-driven architecture. Because of it, a lot of objects that you can encounter inherit from the EventEmmiter class of builtin events package.
 
