@@ -14,6 +14,10 @@
 - UTF-8 (Unicode Transformation Format, 8-bit) is a variable-width character encoding that can represent every character in the Unicode character set.
 - ```0b``` is how you write a binary number in JavaScript.
 - The StringDecoder ensures that the decoded string does not contain any incomplete multi byte characters by holding the incomplete character in an internal buffer until the next call to the ```decoder.write()```.
+- buffer can be created using ```new Buffer()``` and fill each index separately.
+- buffer can be used using ```Buffer.aloc(size,default_value)``` to allocate a buffer.
+- buffer cna be created using ```Buffer.from([1,2,3])``` as a buffer having three values.
+- buffer can be also created from a string ```Buffer.from('Hello world')``` and be changes to string as ```toString()``` method.
 
 
 
