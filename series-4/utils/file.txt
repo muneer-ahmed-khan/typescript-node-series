@@ -1,0 +1,2 @@
+You can encounter streams, for example, when working with files or dealing with HTTP requests.
+Streams handle collections of data that might not be available all at once.

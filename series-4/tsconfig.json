@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es2017",
+    "alwaysStrict": false,
+    "noImplicitAny": true
+  },
+  "exclude": ["node_modules"]
+}
