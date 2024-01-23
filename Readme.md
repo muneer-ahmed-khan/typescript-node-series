@@ -7,3 +7,5 @@
 [Series #3: Buffers](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-3)
 
 [Series #4: Readable Streams](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-4)
+
+[Series #5: Writeable Streams](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-5)
