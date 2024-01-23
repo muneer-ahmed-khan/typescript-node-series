@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es2017",
+    "alwaysStrict": false,
+    "noImplicitAny": true,
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext"
+  },
+  "exclude": ["node_modules"]
+}

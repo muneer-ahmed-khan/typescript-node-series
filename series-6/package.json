@@ -1,0 +1,20 @@
+{
+  "name": "typescript-node-series-1",
+  "version": "1.0.0",
+  "description": "#1",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "form-data": "^4.0.0"
+  }
+}
