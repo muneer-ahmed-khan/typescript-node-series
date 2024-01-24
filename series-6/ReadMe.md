@@ -1,7 +1,7 @@
 ### Usage
 - The ```examples``` folder contain multiple example of sending HTTP requests 
 
-- Uncomment the import statement of any imported utils file in ```main.js``` to see the result.
+- Uncomment the import statement of any imported examples file in ```main.js``` to see the result.
 
 - run the program with command
 ``` npm start ```
