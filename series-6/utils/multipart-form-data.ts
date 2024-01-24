@@ -5,10 +5,10 @@ import { createReadStream, createWriteStream } from "fs";
 const readStream = createReadStream("./photo.jpg");
 const writeStream = createWriteStream("./photo1.jpg");
 
-const form = new FormData();
-form.append("photo", readStream);
-form.append("firstName", "Muneer");
-form.append("lastName", "Ahmed");
+// const form = new FormData();
+// form.append("photo", readStream);
+// form.append("firstName", "Muneer");
+// form.append("lastName", "Ahmed");
 
 // const req = request(
 //   {
@@ -23,7 +23,7 @@ form.append("lastName", "Ahmed");
 //   }
 // );
 
-form.pipe(writeStream);
+readStream.pipe(writeStream);
 
 // Handle events (optional)
 readStream.on("error", (err) => {

@@ -1,0 +1,57 @@
+GET http://localhost:5000 HTTP/1.1
+
+###
+GET http://localhost:5000/posts HTTP/1.1
+
+
+###
+POST  http://localhost:5000/posts HTTP/1.1
+Content-Type: application/json
+
+{
+ "title": "My test title",
+ "content": "my test content"
+}
+
+###
+POST  http://localhost:5000/upload HTTP/1.1 
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="firstName"
+
+Muneer
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="lastName"
+
+Ahmed
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="muneerImage"; filename="photo.jpg"
+Content-Type: image/jpeg
+
+< ./photo.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+###
+POST  http://localhost:5000/upload-with-multipart HTTP/1.1 
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="firstName"
+
+Muneer
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="lastName"
+
+Ahmed
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="muneerImage"; filename="photo.jpg"
+Content-Type: image/jpeg
+
+< ./photo.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+
+

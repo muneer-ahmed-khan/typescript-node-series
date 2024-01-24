@@ -11,3 +11,6 @@
 [Series #5: Writeable Streams](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-5)
 
 [Series #6: Sending a HTTP Request](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-6)
+
+[Series #7: Creating a server, receiving requests](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-7)
+
