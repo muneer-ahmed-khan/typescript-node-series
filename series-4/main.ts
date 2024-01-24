@@ -1,5 +1,5 @@
-// import "./utils/create-readable-stream";
-// import "./utils/stream-modes";
-// import "./utils/readable-stream";
-// import "./utils/custom-read-method";
-import "./utils/readable-stream-event";
+// import "./examples/create-readable-stream";
+// import "./examples/stream-modes";
+// import "./examples/readable-stream";
+// import "./examples/custom-read-method";
+import "./examples/readable-stream-event";

@@ -1,3 +1,3 @@
-import "./utils/string-buffer";
-// import "./utils/string-decoder";
-// import "./utils/working-with-buffer";
+import "./examples/string-buffer";
+// import "./examples/string-decoder";
+// import "./examples/working-with-buffer";

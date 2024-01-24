@@ -1,7 +1,7 @@
-// import "./utils/listeners-with-maximum-call-stack";
-// import "./utils/multiple-listeners";
-// import "./utils/multiple-listeners-with-set-timeout";
-// import "./utils/not-called-events";
-// import "./utils/once-event";
-// import "./utils/remove-listeners";
-import "./utils/this-keyword";
+// import "./examples/listeners-with-maximum-call-stack";
+// import "./examples/multiple-listeners";
+// import "./examples/multiple-listeners-with-set-timeout";
+// import "./examples/not-called-events";
+// import "./examples/once-event";
+// import "./examples/remove-listeners";
+import "./examples/this-keyword";

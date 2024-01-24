@@ -1,9 +1,9 @@
-// import "./utils/http-request";
-// import "./utils/http-response-pipe";
-// import "./utils/http-readable-stream";
-// import "./utils/http-readable-stream-promise";
-// import "./utils/http-readable-stream-promise-interface";
-// import "./utils/http-incoming-client-request";
-import "./utils/multipart-form-data";
-// import "./utils/boundary";
-// import "./utils/boundary-pipe";
+// import "./examples/http-request";
+// import "./examples/http-response-pipe";
+// import "./examples/http-readable-stream";
+// import "./examples/http-readable-stream-promise";
+// import "./examples/http-readable-stream-promise-interface";
+// import "./examples/http-incoming-client-request";
+import "./examples/multipart-form-data";
+// import "./examples/boundary";
+// import "./examples/boundary-pipe";

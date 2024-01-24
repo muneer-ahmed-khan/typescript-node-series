@@ -1,5 +1,5 @@
-import touch from "./utils/touch";
-import cat from "./utils/cat";
+import touch from "./examples/touch";
+import cat from "./examples/cat";
 
 const command = process.argv[2]; // touch
 const path = process.argv[3]; // where to create the file

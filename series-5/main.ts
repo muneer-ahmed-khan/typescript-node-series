@@ -1,9 +1,9 @@
-// import "./utils/create-write-stream";
-// import "./utils/finish-stream";
-// import "./utils/readable-writable-stream";
-// import "./utils/transform-stream";
-// import "./utils/pipes";
-// import "./utils/writeable-stream";
-// import "./utils/writeable-stream-class";
-// import "./utils/standard-input-readable-stream";
-import "./utils/standard-output-readable-stream";
+// import "./examples/create-write-stream";
+// import "./examples/finish-stream";
+// import "./examples/readable-writable-stream";
+// import "./examples/transform-stream";
+// import "./examples/pipes";
+// import "./examples/writeable-stream";
+// import "./examples/writeable-stream-class";
+// import "./examples/standard-input-readable-stream";
+import "./examples/standard-output-readable-stream";

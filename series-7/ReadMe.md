@@ -1,5 +1,5 @@
 ### Usage
-- The ```utils``` folder contain multiple example of Creating a server, receiving requests.
+- The ```examples``` folder contain multiple example of Creating a server, receiving requests.
 
 - Uncomment the import statement of any imported utils file in ```main.js``` to see the result.
 

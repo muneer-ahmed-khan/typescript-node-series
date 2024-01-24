@@ -1,5 +1,5 @@
 ### Usage
-- The ```utils``` folder contain multiple example of writable streams. 
+- The ```examples``` folder contain multiple example of writable streams. 
 
 - Uncomment the import statement of any imported utils file in ```main.js``` to see the result.
 

@@ -1,5 +1,5 @@
 ### Usage
-- The ```utils``` folder contain multiple example of sending HTTP requests 
+- The ```examples``` folder contain multiple example of sending HTTP requests 
 
 - Uncomment the import statement of any imported utils file in ```main.js``` to see the result.
 
