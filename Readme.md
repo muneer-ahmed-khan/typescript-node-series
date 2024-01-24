@@ -14,3 +14,5 @@
 
 [Series #7: Creating a server, receiving requests](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-7)
 
+[Series #8: Implementing HTTPS with our own OPENSSL Certificate](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-8)
+
