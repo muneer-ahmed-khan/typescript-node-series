@@ -16,3 +16,5 @@
 
 [Series #8: Implementing HTTPS with our own OPENSSL Certificate](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-8)
 
+[Series #9: The event loop in Node.js](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-9)
+
