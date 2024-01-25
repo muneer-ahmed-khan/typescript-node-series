@@ -18,3 +18,5 @@
 
 [Series #9: The event loop in Node.js](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-9)
 
+[Series #10: Creating A Child process in Node.js](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-10)
+
