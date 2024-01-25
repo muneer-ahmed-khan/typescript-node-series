@@ -34,4 +34,10 @@ Welcome to the comprehensive series on Node.js with TypeScript! This collection 
 10. [**Series #10: Creating a Child Process in Node.js**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-10)
     - Learn how to spawn child processes in Node.js for parallelizing tasks and improving system performance.
 
+11. [**Series #11: Node.js Cluster: sharing the workload between multiple processes**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-11)
+    - Improve application performance by parallelizing the execution of Node.js processes across multiple cores.
+    
+
+
+
 Feel free to explore each series at your own pace and level up your skills in Node.js and TypeScript. Happy coding! 🚀
