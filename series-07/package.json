@@ -1,7 +1,7 @@
 {
-  "name": "typescript-node-series-1",
+  "name": "typescript-node-series-07",
   "version": "1.0.0",
-  "description": "#1",
+  "description": "#7",
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./main.ts"
