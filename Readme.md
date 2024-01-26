@@ -36,7 +36,14 @@ Welcome to the comprehensive series on Node.js with TypeScript! This collection 
 
 11. [**Series #11: Node.js Cluster: sharing the workload between multiple processes**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-11)
     - Improve application performance by parallelizing the execution of Node.js processes across multiple cores.
+
+
+12. [**Series #12: Node.js HTTP/2 Protocol: use of http2 protocol with Node js**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-12)
+    - usage of http/2 protocol
+   
     
+
+
 
 
 
