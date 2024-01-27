@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "target": "es2017",
+    "target": "ES2017",
     "alwaysStrict": true,
     "noImplicitAny": true
   },

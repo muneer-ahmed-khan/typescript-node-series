@@ -12,5 +12,3 @@ export default function cat(path: string) {
     })
     .catch((error) => console.log(error));
 }
-
-// npm start -- cat ./file.txt
