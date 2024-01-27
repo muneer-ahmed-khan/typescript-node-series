@@ -51,6 +51,8 @@ console.log(this === module.exports); // true
 
 - With the help of a built-in utility called promisify, we can change the writeFile function in a way that it returns a promise.
 
+- TypeScript compiles the imports that we write in our code to CommonJS
+
 ### To create a new file 
 ``` npm start -- touch ./file.txt ```
 
