@@ -19,7 +19,7 @@ class WritableFileStream extends Writable {
   }
 }
 
-const readable = fs.createReadStream("./file1.txt");
-const writable = new WritableFileStream("./file2.txt");
+const readable = fs.createReadStream("./src/file1.txt");
+const writable = new WritableFileStream("./src/file2.txt");
 
 readable.pipe(writable);

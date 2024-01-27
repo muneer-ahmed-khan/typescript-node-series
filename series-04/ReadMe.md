@@ -1,6 +1,6 @@
 # [Series #04: Readable Streams](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-04)
 
-Welcome to the Node.js TypeScript [Series #04: Readable Streams](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-04), focusing on Readable Streams. This is the third series following [Series-03](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-03)
+Welcome to the Node.js TypeScript [Series #04: Readable Streams](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-04), focusing on Readable Streams. This is the fourth series following [Series-03](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-03)
 
 
 #### Streams

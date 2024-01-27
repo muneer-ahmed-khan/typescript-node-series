@@ -2,10 +2,10 @@ const { Transform } = require("stream");
 const fs = require("fs");
 
 // Create a readable stream (source)
-const readableStream = fs.createReadStream("input.txt");
+const readableStream = fs.createReadStream("./src/input.txt");
 
 // Create a writable stream (destination)
-const writableStream = fs.createWriteStream("output.txt");
+const writableStream = fs.createWriteStream("./src/output.txt");
 
 // Create a transform stream for uppercase conversion
 const uppercaseTransform = new Transform({
