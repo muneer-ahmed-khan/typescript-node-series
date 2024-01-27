@@ -1,5 +1,7 @@
 # Exploring the World of Node.js with TypeScript: A Comprehensive Series
 
+![Node.js Typescript Image](Node-js-Typescript-series.png)
+
 Welcome to the comprehensive series on Node.js with TypeScript! This collection of tutorials covers a variety of topics, from fundamental concepts to advanced techniques. Whether you're a beginner or an experienced developer, this series aims to enhance your understanding of Node.js using TypeScript.
 
 ## Series Overview:

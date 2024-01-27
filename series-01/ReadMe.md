@@ -1,61 +1,100 @@
-### Main Points
+# [Series #01: The Basics of Node.js](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-01)
 
-```
-console.log('Hello');
-return;
-console.log('world!');
+Welcome to the TypeScript Node.js [Series-01](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-01) repository, where I explore the basics of Node.js with TypeScript. This series covers fundamental concepts, examples, and practical applications.
+
+## Understanding Node.js
+
+Node.js is an environment for running JavaScript outside of a browser. After installing Node.js, you can execute JavaScript code in your terminal. If you've worked on front-end code, chances are you already have Node.js installed, as it comes with Node Package Manager (npm).
+
+To check your Node.js version, run:
+
+```bash
+node -v
 ```
 
-- This program will result in error on node terminal.
-- An ECMAScript program is considered syntactically incorrect if it contains a return statement
-that is not within a FunctionBody.
-- In Node.js, each file is treated as a separate module. Under the hood, Node.js wraps them in a function like this.
+## Modules
 
-```
+In this series, I focus on TypeScript, but it's crucial to understand Node.js modules. Each file in Node.js is treated as a separate module, wrapped in a function. This scoping ensures top-level variables are module-specific, not global. The `module` object facilitates value exports.
+
+```javascript
 function (exports, require, module, __filename, __dirname) {
   // code of the module
 }
 ```
-it proves that the our program is in a function.
 
-- The top-level variables are scoped to the module and are not global throughout the whole project. The module object can be used to export values.
-- To access it from another file, we use the require function.
+This module system follows the CommonJS format, with ```this``` referencing module.exports.
 
-- This module system is an implementation of the CommonJS format.
-
--  the “this” keyword references to the module.exports.
-
-``` 
+```js
 console.log(this === module.exports); // true
 ```
 
-- <b>global</b> object is same as <b>window</b> object on browser side javascript.
-- In the node js terminal the “this” keyword references to the global object.
-- The <b>global</b> object is shared between all your modules.
+## Global Object
 
-- The <b>process</b> object is a property of the <b>global</b> object, and therefore it is available throughout your application
+Node.js has a ```global``` object, analogous to the browser's ```window``` object. When running Node.js in the terminal, the ```this``` keyword refers to the global object. Variables declared with ```var``` are attached to the global object, shared between all modules.
 
-- ```process.argv``` property holds an array containing the command line arguments you pass when launching the Node.js process.
+## Process Arguments
 
-- The first element is the same as the ```process.execPath``` and it holds the absolute pathname of the executable that started the Node.js process.
+The ```process``` object, a property of the ```global``` object, provides information about the Node.js app environment. I focus on the ```process.argv``` property, holding an array of command line arguments passed when launching the Node.js process.
 
-- The second element is a path to the executed JavaScript file. The rest of the ```process.argv``` elements are any additional command line arguments.
+```bash
+node ./main.js one two three
+```
 
-- To run our scripts using <b>TypeScript</b> we need to install the ```typescript``` and ```ts-node``` packages.
+## Running a TypeScript Project
 
-- With TypeScript Node.js we use imports and exports like in ES6 Modules, but since Node.js does not yet support them, ```ts-node``` transpile our code to CommonJS.
+To run TypeScript scripts, initialize your project using npm and install TypeScript and ts-node.
 
-- The ```fs``` module gives us an API to interact with the file system, for example, to read, create and delete files. All operations have synchronous and asynchronous forms, but it is heavily recommended to use asynchronous functions for better performance.
+```bash
+npm init -y
+npm install -D ts-node typescript @types/node
+```
+Use a `tsconfig.json` file for TypeScript configuration. Scripts can then be executed using:
+```bash
+npm start
+```
 
-- The asynchronous function always takes a error-first callback as its last argument.
+## File System
+The ```fs``` module provides an API for file system interactions. While it offers synchronous and asynchronous forms, I recommend asynchronous functions for better performance. The promisify utility converts callback-based functions to promises.
 
-- With the help of a built-in utility called promisify, we can change the writeFile function in a way that it returns a promise.
+```ts
+import * as fs from 'fs';
+import * as util from 'util';
 
-- TypeScript compiles the imports that we write in our code to CommonJS
+const writeFile = util.promisify(fs.writeFile);
+```
 
-### To create a new file 
-``` npm start -- touch ./file.txt ```
 
-### To read content of a file 
-``` npm start -- cat ./file.txt ```
+## tsconfig.json
+
+### Compiler Options
+
+- **sourceMap**: Enables the generation of source map files. This is useful for debugging, allowing you to map the compiled JavaScript code back to your original TypeScript code.
+
+- **target**: Specifies the ECMAScript target version for the generated JavaScript code. In this case, it is set to "es2017," indicating ECMAScript 2017.
+
+- **alwaysStrict**: Enforces strict mode in all generated JavaScript files, promoting safer and more predictable code.
+
+- **noImplicitAny**: Flags an error if TypeScript implicitly assigns the `any` type to a variable. This encourages explicit type declarations, enhancing code clarity and reliability.
+
+
+##### Exclude
+
+- **node_modules**: Specifies that the TypeScript compiler should exclude the `node_modules` directory when compiling TypeScript files. This directory typically contains third-party dependencies and doesn't need to be compiled.
+
+---
+
+
+## Creating a New File
+To create an empty file:
+```bash
+npm start -- touch ./file.txt
+```
+
+## Reading the Content of a File
+To read the content of a file:
+```bash
+npm start -- cat ./file.txt
+```
+
+Explore advanced topics and continue your learning journey by visiting [Series-02](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-02). While this repository provides a foundation in the basics, Series-02 offers the synchronous nature of the EventEmitter in Node.js. **Enjoy coding!**
 
