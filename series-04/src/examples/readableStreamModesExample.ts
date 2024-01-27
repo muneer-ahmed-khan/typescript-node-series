@@ -1,6 +1,8 @@
 import * as fs from "fs";
 
-const stream = fs.createReadStream("./utils/file.txt", { highWaterMark: 64 });
+const stream = fs.createReadStream("./src/examples/file.txt", {
+  highWaterMark: 64,
+});
 
 // changes paused mode into flowing mode
 stream.resume();

@@ -19,4 +19,5 @@ stream.on("data", (chunk: Buffer) => {
   const stringDecoderChunk = decoder.write(chunk);
 
   console.log("New chunk of data:", stringDecoderChunk);
+  console.log("string chunk of data:", stringChunk);
 });
