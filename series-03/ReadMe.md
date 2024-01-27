@@ -63,6 +63,6 @@ Run the program with the command:
 - Creating a buffer from a string is possible with `Buffer.from('Hello world')`, and conversion back to a string is facilitated by the `toString()` method.
 
 
-Explore advanced topics and continue your learning journey by visiting [Series-04](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-04). While this series provides Buffers in Node.js, Series-04 focus on ```readable streams``` in Node.js. **Enjoy coding!**
+Explore advanced topics and continue your learning journey by visiting [Series-04](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-04). While this series provides Buffers in Node.js, [Series-04](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-04) focus on ```readable streams``` in Node.js. **Enjoy coding!**
 
 
