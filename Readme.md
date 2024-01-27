@@ -40,6 +40,12 @@ Welcome to the comprehensive series on Node.js with TypeScript! This collection 
 
 12. [**Series #12: Node.js HTTP/2 Protocol: use of http2 protocol with Node js**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-12)
     - usage of http/2 protocol
+
+13. [**Series #13: Worker threads**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-13)
+    - worker threads with message channel
+
+14. [**Series #14: Measuring processes & worker threads with Performance hooks**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-14)
+    - performance hooks
    
     
 

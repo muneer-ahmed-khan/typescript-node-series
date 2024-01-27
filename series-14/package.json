@@ -1,0 +1,20 @@
+{
+  "name": "typescript-node-series-13",
+  "version": "1.0.0",
+  "description": "#13",
+  "main": "index.js",
+  "scripts": {
+    "precompile": "tsc ./examples/child.ts && tsc ./examples/worker.ts",
+    "prestart": "npm run precompile",
+    "start": "ts-node ./main.ts"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
