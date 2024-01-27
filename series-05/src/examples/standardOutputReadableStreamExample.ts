@@ -1,6 +1,6 @@
 import * as fs from "fs";
 
-const readable = fs.createReadStream("./file1.txt");
+const readable = fs.createReadStream("./src/file1.txt");
 
 readable.pipe(process.stdout);
 

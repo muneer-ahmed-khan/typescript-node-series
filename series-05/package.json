@@ -1,14 +1,21 @@
 {
   "name": "typescript-node-series-05",
   "version": "1.0.0",
-  "description": "#5",
-  "main": "index.js",
+  "description": "Node.js with TypeScript - Series-05",
   "scripts": {
-    "start": "ts-node ./main.ts"
+    "start": "ts-node ./src/main.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "node",
+    "typescript",
+    "series-05"
+  ],
+  "author": "Muneer Ahmed",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-05"
+  },
   "devDependencies": {
     "@types/node": "^20.11.5",
     "ts-node": "^10.9.2",

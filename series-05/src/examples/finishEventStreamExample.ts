@@ -1,6 +1,6 @@
 import * as fs from "fs";
 
-const stream = fs.createWriteStream("./file.txt");
+const stream = fs.createWriteStream("./src/file.txt");
 
 stream.on("finish", () => {
   console.log("All the data is transmitted");
