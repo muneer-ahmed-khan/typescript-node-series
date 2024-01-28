@@ -1,14 +1,21 @@
 {
   "name": "typescript-node-series-07",
   "version": "1.0.0",
-  "description": "#7",
-  "main": "index.js",
+  "description": "Node.js with TypeScript - Series-07",
   "scripts": {
-    "start": "ts-node ./main.ts"
+    "start": "ts-node ./src/main.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "node",
+    "typescript",
+    "series-07"
+  ],
+  "author": "Muneer Ahmed",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-07"
+  },
   "devDependencies": {
     "@types/multiparty": "^0.0.36",
     "@types/node": "^20.11.5",
