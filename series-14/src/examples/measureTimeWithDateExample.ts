@@ -2,7 +2,6 @@ const start = new Date().getTime();
 
 setTimeout(() => {
   const end = new Date().getTime();
-  console.log("check ", start, end);
 
-  console.log(end - start);
+  console.log("Time diff is ", end - start);
 }, 500);

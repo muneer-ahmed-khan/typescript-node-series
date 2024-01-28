@@ -14,7 +14,7 @@ measureChildProcess().then(measureWorkerThread);
 function measureChildProcess() {
   return new Promise((resolve) => {
     performance.mark("child process start");
-    const child = fork("./examples/child.ts");
+    const child = fork("./src/examples/child.ts");
     child.send(20);
     child.on("message", (message: number) => {
       console.log("Result from child process: ", message);
@@ -31,7 +31,7 @@ function measureChildProcess() {
 
 function measureWorkerThread() {
   performance.mark("worker thread start");
-  const worker = new Worker("./worker.js", {
+  const worker = new Worker("./src/worker.js", {
     workerData: {
       value: 20,
       path: "./examples/worker.ts",
