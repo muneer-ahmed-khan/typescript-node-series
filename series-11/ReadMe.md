@@ -129,18 +129,6 @@ if (cluster.isMaster) {
 }
 ```
 
-## Main Points
-
-- Node.js is single-threaded by nature, but it leverages additional threads behind the scenes for tasks such as file operations.
-- The cluster module in Node.js allows the creation of multiple processes, each running on a separate CPU core, sharing server ports for load balancing.
-- The os module is used to determine the number of CPU cores before deciding how many processes to start.
-- The cluster module is part of the Node.js core and is employed to create and manage clusters, enhancing performance and scalability.
-- The scheduling policy determines how the master process distributes incoming connections among worker processes, with round-robin being the default policy.
-- Events such as "exit" and "online" are emitted by the cluster module and worker processes, providing useful hooks for handling worker events.
-- Communication between the master and workers is facilitated by events and the send() function, allowing for effective coordination in a multi-process environment.
-- Node.js applications can efficiently utilize available CPU cores using the cluster module, leading to improved performance and scalability.
-
-
 ### Child Process Module vs Cluster Module in Node.js
 
 #### Child Process Module:
