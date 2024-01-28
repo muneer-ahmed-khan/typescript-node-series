@@ -1,3 +1,6 @@
+// before running the module first run the workerProcessesWithHttpServerExample file to create server and listen to request
+// this module will give you the list of worker how many request was handle by each worker
+
 import { request, RequestOptions } from "http";
 
 const pidObject: { [key: number]: number } = {};
