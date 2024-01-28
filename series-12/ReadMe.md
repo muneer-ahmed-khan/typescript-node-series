@@ -1,6 +1,6 @@
 # [Series #12: HTTP/2 in Node.js](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-12)
 
-Welcome to the Node.js TypeScript [Series #12: HTTP/2 in Node.js](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-12), focusing on Node.js **http2** module. This is the 11th series following [Series-11](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-11)
+Welcome to the Node.js TypeScript [Series #12: HTTP/2 in Node.js](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-12), focusing on Node.js **http2** module. This is the 12th series following [Series-11](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-11)
 
 
 

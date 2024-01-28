@@ -1,9 +1,9 @@
 import { Worker, MessageChannel } from "worker_threads";
 const { port1, port2 } = new MessageChannel();
 
-const worker = new Worker("./worker.js", {
+const worker = new Worker("./src/worker.js", {
   workerData: {
-    path: "./examples/worker-thread-message-channel-array-buffer.ts",
+    path: "./examples/workerThreadWithArrayBufferExample.ts",
   },
 });
 
