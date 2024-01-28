@@ -4,7 +4,7 @@ import * as os from "os";
 
 const numberOfCores = os.cpus().length;
 
-console.log((cluster as any).schedulingPolicy === (cluster as any).SCHED_RR); // true
+// console.log((cluster as any).schedulingPolicy === (cluster as any).SCHED_RR); // true
 
 if (cluster.isPrimary) {
   console.log(`Master ${process.pid} started`);
