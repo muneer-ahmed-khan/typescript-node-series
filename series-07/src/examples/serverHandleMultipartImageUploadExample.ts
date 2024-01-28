@@ -8,7 +8,7 @@ interface Post {
   content: string;
 }
 
-const port = 5000;
+const port = 3000;
 
 const posts: Post[] = [
   {

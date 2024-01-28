@@ -1,6 +1,6 @@
 import { createServer, IncomingMessage, ServerResponse } from "http";
 
-const port = 5000;
+const port = 3000;
 
 const server = createServer(
   (request: IncomingMessage, response: ServerResponse) => {
@@ -14,6 +14,6 @@ server.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
 
-server.on("error", () => {
-  console.log("error on server");
+server.on("error", (error) => {
+  console.log("error on server", error);
 });

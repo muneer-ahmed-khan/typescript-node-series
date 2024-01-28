@@ -1,11 +1,11 @@
-GET http://localhost:5000 HTTP/1.1
+GET http://localhost:3000 HTTP/1.1
 
 ###
-GET http://localhost:5000/posts HTTP/1.1
+GET http://localhost:3000/posts HTTP/1.1
 
 
 ###
-POST  http://localhost:5000/posts HTTP/1.1
+POST  http://localhost:3000/posts HTTP/1.1
 Content-Type: application/json
 
 {
@@ -14,7 +14,7 @@ Content-Type: application/json
 }
 
 ###
-POST  http://localhost:5000/upload HTTP/1.1 
+POST  http://localhost:3000/upload HTTP/1.1 
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -29,12 +29,12 @@ Ahmed
 Content-Disposition: form-data; name="muneerImage"; filename="photo.jpg"
 Content-Type: image/jpeg
 
-< ./photo.jpg
+< ./src/photo.jpg
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
 
 ###
-POST  http://localhost:5000/upload-with-multipart HTTP/1.1 
+POST  http://localhost:3000/upload-with-multipart HTTP/1.1 
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
