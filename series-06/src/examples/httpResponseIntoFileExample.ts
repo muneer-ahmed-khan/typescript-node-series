@@ -1,4 +1,7 @@
 import { request } from "http";
+import { createWriteStream } from "fs";
+
+const fileStream = createWriteStream("./src/todoResponse.txt");
 
 const req = request(
   {
@@ -7,7 +10,7 @@ const req = request(
     method: "GET",
   },
   (response) => {
-    console.log(response); // 200
+    response.pipe(fileStream);
   }
 );
 
