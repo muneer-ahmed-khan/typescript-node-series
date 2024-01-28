@@ -1,3 +1,84 @@
+
+# [Series #08: HTTPS with OpenSSL Certificate](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-08)
+
+Welcome to the Node.js TypeScript [Series #08: HTTPS with OpenSSL Certificate](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-08), focusing on creating a HTTPS Server. This is the eighth series following [Series-07](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-07)
+
+# HTTPS Principles and Implementation in Node.js
+
+## Problems Solved by HTTPS:
+
+### Man-in-the-Middle Attacks:
+
+- Attackers can intercept and alter communication between the client and the server.
+- HTTPS encrypts data, preventing eavesdropping (listen in) on sensitive information like passwords.
+- Particularly crucial in public Wi-Fi networks where attackers might perform man-in-the-middle attacks.
+
+### Phishing:
+
+- HTTPS helps combat phishing by verifying the authenticity of websites.
+- Certificate authorities issue certificates, and browsers trust these authorities.
+- Users can check for HTTPS and a valid certificate to verify a website's legitimacy.
+
+## Certificates:
+
+- Certificates are issued by certificate authorities and verify a website's ownership of a domain.
+- Browsers trust certificates from recognized authorities.
+- HTTPS uses the TLS protocol, and the TLS Handshake involves the exchange of certificates.
+- Asymmetric cryptography is used, with a public key for encryption and a private key for decryption.
+
+## Generating a Certificate:
+
+- For local development, OpenSSL can be used to generate a self-signed certificate.
+- Command to generate a certificate:
+  ```bash
+  openssl req -x509 -newkey rsa:4096 -keyout key.pem -out certificate.pem -days 365 -nodes
+  ```
+  - `-x509`: X.509 standard for TLS certificates.
+  - `-newkey`: Requests a new key (RSA algorithm, 4096 bits).
+  - `-days`: Specifies the certificate's validity period.
+  - `-nodes`: No DES (no key encryption).
+
+
+# Implementing HTTPS in Node.js:
+
+Node.js provides the `https` module for implementing HTTPS. Below is an example code:
+
+```typescript
+import * as https from 'https';
+import * as fs from 'fs';
+import * as util from 'util';
+
+const readFile = util.promisify(fs.readFile);
+
+async function startServer() {
+  const [key, cert] = await Promise.all([
+    readFile('key.pem'),
+    readFile('certificate.pem')
+  ]);
+
+  https.createServer({ key, cert }, (req, res) => {
+    res.statusCode = 200;
+    res.end('hello world');
+  })
+  .listen(8000, () => {
+    console.log('Server started');
+  });
+}
+
+startServer();
+```
+- Reads the key and certificate files.
+- Creates an HTTPS server using the provided key and certificate.
+
+### Let's Encrypt:
+For production, obtaining a valid certificate is recommended. Let's Encrypt is a service that provides free and valid certificates. Instructions for using Let's Encrypt are available in their documentation.
+
+### Mixed Content:
+When serving a website over HTTPS, all resources, including CSS, JavaScript, and API requests, should be fetched using HTTPS. Browsers block mixed content (HTTP resources on an HTTPS site) for security reasons.
+
+
+
+
 ### Usage
 - The ```examples``` folder contain multiple example of Creating a server, receiving requests.
 
@@ -6,33 +87,10 @@
 - run the program with command
 ``` npm start ```
 
-### Main Points
-- HTTPS provides a secure and encrypted communication channel, ensuring data integrity, confidentiality, and authentication, while also addressing trust-related concerns.
-- It is essential for protecting sensitive information transmitted over the internet and maintaining a secure online environment.
-- With **HTTP**, we send the data in plaintext. With **HTTPS**, it is **encrypted**.
-- Attacks:
-    - **Man in middle**
-        - It is a situation where an attacker inserts himself in-between the client and the server.
-        - He can see the traffic, alter it, and relay it to the destination while remaining unnoticed.
-        - Public WiFi network, for example in a hotel or a restaurant. Places like that are great for an attacker to perform the man in the middle attack.
 
-    - **Phishing**
-        - Getting important information such as passwords or credit card details by pretending to be someone trustworthy.
-        - Email phishing, spear phishing (targeted attacks on specific individuals or organizations), vishing (voice phishing over phone calls), and smishing (phishing via SMS or text messages). 
-        - As technology evolves, attackers continue to develop new and sophisticated phishing techniques.
-        - To protect against phishing attacks, individuals and organizations should be cautious about clicking on links or providing sensitive information in response to unexpected or suspicious communications. 
-        - Verifying the legitimacy of emails, using multi-factor authentication, and staying informed about common phishing tactics are essential practices to enhance cybersecurity.
-- For the site to be valid while using HTTPS, it needs a **certificate**.
-- The **certificate** can be issued by a **certificate authority**.
-- HTTPS uses the TLS protocol, the successor of SSL.
-- During the initial **TLS** Handshake, the server responds with a **certificate**.
-- It includes a **public key** that is later used for encrypting communication during the handshake.
-- This is an example of assymetric cryptography. It uses a **public key** that is widely distributed and can be used to encrypt data. To decrypt it you need a **private key**, that should be kept secret.
-- To implement HTTPS connection you need a valid **certificate** and a **secret key**.
-- For local development, we can create our **certificate** without any external **certificate** authorities.
-- To do it we use **OpenSSL** that is preinstalled on many Linux distributions. You can also use it on Windows or Mac.
-- ```openssl req -x509 -newkey rsa:4096 -keyout key.pem -out certificate.pem -days 365 -nodes```
-- This generates two files for us: **key.pem**  and **certificate.pem**.
+
+Explore advanced topics and continue your learning journey by visiting [Series-09](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-09). While this series provides creating HTTPS server in Node.js, [Series-09](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-09) focus on ```Node.js Event Loop``` in Node.js. **Enjoy coding!**
+
 
 
 
