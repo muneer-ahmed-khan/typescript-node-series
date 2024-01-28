@@ -1,9 +1,9 @@
 import { Worker } from "worker_threads";
 
-const worker = new Worker("./worker.js", {
+const worker = new Worker("./src/worker.js", {
   workerData: {
     value: 15,
-    path: "./examples/worker-thread.ts",
+    path: "./examples/workerThreadExample.ts",
   },
 });
 

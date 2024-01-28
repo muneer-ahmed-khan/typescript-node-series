@@ -5,7 +5,11 @@
   "scripts": {
     "start": "ts-node ./src/main.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "typescript",
+    "series-11"
+  ],
   "author": "Muneer Ahmed",
   "license": "ISC",
   "repository": {
