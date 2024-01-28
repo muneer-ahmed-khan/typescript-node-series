@@ -1,18 +1,16 @@
-# Exploring the World of Node.js with TypeScript: A Comprehensive Series
+# Exploring Node.js with TypeScript: A Comprehensive Series
 
-Welcome to the comprehensive series on Node.js with TypeScript! This collection of tutorials covers a variety of topics, from fundamental concepts to advanced techniques. Whether you're a beginner or an experienced developer, this series aims to enhance your understanding of Node.js using TypeScript.
+Welcome to this comprehensive series on Node.js with TypeScript! This collection of tutorials covers a range of topics, from fundamental concepts to advanced techniques. Whether you're a beginner or an experienced developer, this series aims to enrich your understanding of Node.js using TypeScript.
 
-![Node.js Typescript Image](Node-js-Typescript-series.png)
-
-
+![Node.js TypeScript Image](Node-js-Typescript-series.png)
 
 ## Series Overview:
 
 1. [**Series #01: File System Basics and Script Execution in Node.js TypeScript**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-01)
-   - Explore the basics of the file system and learn how to pass additional arguments when running a script in Node.js TypeScript.
+   - Delve into the basics of the file system and learn how to pass additional arguments when running a script in Node.js TypeScript.
 
 2. [**Series #02: The Synchronous Nature of the EventEmitter**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-02)
-   - Delve into the synchronous nature of the EventEmitter in Node.js and understand its role in event-driven programming.
+   - Explore the synchronous nature of the EventEmitter in Node.js and understand its role in event-driven programming.
 
 3. [**Series #03: Buffers Demystified**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-03)
    - Gain insights into Buffers, an essential component in handling binary data in Node.js.
@@ -38,23 +36,27 @@ Welcome to the comprehensive series on Node.js with TypeScript! This collection 
 10. [**Series #10: Creating a Child Process in Node.js**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-10)
     - Learn how to spawn child processes in Node.js for parallelizing tasks and improving system performance.
 
-11. [**Series #11: Node.js Cluster: sharing the workload between multiple processes**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-11)
+11. [**Series #11: Node.js Cluster: Sharing the Workload Between Multiple Processes**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-11)
     - Improve application performance by parallelizing the execution of Node.js processes across multiple cores.
 
+12. [**Series #12: Node.js HTTP/2 Protocol: Usage of HTTP/2 Protocol with Node.js**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-12)
+    - Explore the usage of the HTTP/2 protocol.
 
-12. [**Series #12: Node.js HTTP/2 Protocol: use of http2 protocol with Node js**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-12)
-    - usage of http/2 protocol
+13. [**Series #13: Worker Threads with Message Channel**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-13)
+    - Dive into the world of worker threads with a focus on message channels.
 
-13. [**Series #13: Worker threads**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-13)
-    - worker threads with message channel
-
-14. [**Series #14: Measuring processes & worker threads with Performance hooks**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-14)
-    - performance hooks
-   
-    
-
-
-
-
+14. [**Series #14: Measuring Processes & Worker Threads with Performance Hooks**](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-14)
+    - Explore the capabilities of performance hooks in measuring processes and worker threads.
 
 Feel free to explore each series at your own pace and level up your skills in Node.js and TypeScript. Happy coding! 🚀
+
+## Connect with the Author
+
+For any inquiries, feedback, or collaboration opportunities, please reach out to the author:
+
+**Muneer Ahmed**
+- [LinkedIn](https://www.linkedin.com/in/muneer-ahmed-a59362140/)
+
+Stay tuned for more exciting content and updates by starring this repository.
+
+Happy Coding!
