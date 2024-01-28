@@ -7,7 +7,7 @@ import { spawn } from "child_process";
 // const child = spawn("ls");
 // const child = spawn("ls", ["-la", "./node_modules"]);
 // const child = spawn("ls", ["|", "grep", ".txt"], { shell: true });
-const child = spawn("./script.sh");
+const child = spawn("./src/script.sh");
 
 child.stdout.on("data", (data) => {
   console.log(data.toString());

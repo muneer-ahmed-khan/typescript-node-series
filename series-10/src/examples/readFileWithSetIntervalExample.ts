@@ -1,8 +1,8 @@
 import { readFile } from "fs";
 
-console.time("reading file");
+console.time("read file time");
 readFile("./file.txt", () => {
-  console.timeEnd("reading file");
+  console.timeEnd("read file time");
   process.exit();
 });
 

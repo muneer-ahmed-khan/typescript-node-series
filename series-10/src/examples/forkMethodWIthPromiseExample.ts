@@ -10,7 +10,7 @@ factorial(20)
 
 function factorial(n: number) {
   return new Promise((resolve, reject) => {
-    const child = fork("./child.ts");
+    const child = fork("./src/child.ts");
     child.send(n);
     child.on("message", (result: number) => {
       resolve(result);

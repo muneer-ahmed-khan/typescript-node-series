@@ -5,7 +5,11 @@
   "scripts": {
     "start": "ts-node ./src/main.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "typescript",
+    "series-09"
+  ],
   "author": "Muneer Ahmed",
   "license": "ISC",
   "repository": {
@@ -13,7 +17,6 @@
     "url": "https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-09"
   },
   "devDependencies": {
-    "@types/multiparty": "^0.0.36",
     "@types/node": "^20.11.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
