@@ -8,4 +8,9 @@ form.append("photo", readStream);
 form.append("firstName", "Muneer");
 form.append("lastName", "Ahmed");
 
-console.log(form.getHeaders());
+// console.log("Content: ", form);
+
+console.log(
+  "HTTP headers in image upload with boundary string ",
+  form.getHeaders()
+);
