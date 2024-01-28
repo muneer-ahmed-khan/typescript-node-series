@@ -1,14 +1,17 @@
 {
   "name": "typescript-node-series-09",
   "version": "1.0.0",
-  "description": "#9",
-  "main": "index.js",
+  "description": "Node.js with TypeScript - Series-09",
   "scripts": {
-    "start": "ts-node ./main.ts"
+    "start": "ts-node ./src/main.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Muneer Ahmed",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-09"
+  },
   "devDependencies": {
     "@types/multiparty": "^0.0.36",
     "@types/node": "^20.11.5",

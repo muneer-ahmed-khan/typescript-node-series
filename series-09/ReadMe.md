@@ -1,3 +1,61 @@
+# [Series #09: Node.js Event Loop](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-09)
+
+Welcome to the Node.js TypeScript [Series #09: Node.js Event Loop](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-09), focusing on Node.js Event Loop. This is the ninth series following [Series-08](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-08)
+
+# Event Loop in Node.js
+
+JavaScript and the Node.js environment utilize the Event Loop, a fundamental concept in the Node.js runtime environment. The Event Loop allows Node.js to handle multiple operations concurrently without the need for multi-threading. It operates on a single thread, utilizing non-blocking I/O operations. In this context, we explore the different phases of the event loop, focusing on functions like `setTimeout`, `setInterval`, `setImmediate`, and `process.nextTick`.
+
+## Timers Phase
+
+The first phase of the event loop is Timers. This phase executes callbacks scheduled by `setTimeout` and `setInterval`. `setTimeout` sets a timer that executes a function after a specified threshold, not necessarily at an exact time. Similarly, `setInterval` causes a function to execute repeatedly with a specified time delay between each call.
+
+**Example:**
+
+```javascript
+console.time('setTimeout');
+setTimeout(() => {
+  console.log('Timer went off');
+  console.timeEnd('setTimeout');
+}, 100);
+```
+
+## Poll Phase
+
+During the Poll phase, Input/Output related callbacks execute, such as those connected to the File System module. If there are events, they are handled one by one. If no events are present, Node.js waits briefly for new events to execute immediately.
+
+## Check Phase
+
+The Check phase runs immediately after the Poll phase and invokes callbacks set up using the `setImmediate` function. It executes a script once the current Poll phase completes.
+
+**Example:**
+
+```javascript
+setTimeout(() => {
+  console.log('set timeout');
+}, 0);
+
+setImmediate(() => {
+  console.log('set immediate');
+});
+```
+
+# Close Callbacks Phase
+
+In the Close Callbacks phase, callbacks like the 'close' event emitted when a socket is closed using the `socket.destroy()` function are executed.
+
+## `process.nextTick`
+
+Though not technically part of the event loop, `process.nextTick` fires immediately on the same phase as the event loop. It invokes more immediately than `setImmediate`, making it unique.
+
+In summary, understanding the event loop and its phases, along with these functions, provides insights into how Node.js handles asynchronous operations efficiently.
+
+
+
+
+
+
+
 ### Usage
 - The ```examples``` folder contain multiple example of Creating a server, receiving requests.
 
@@ -7,42 +65,23 @@
 ``` npm start ```
 
 ### Main Points
-- JavaScript and the Node.js environment uses the Event Loop.
-- The Node.js event loop is a fundamental concept in the Node.js runtime environment.
-- It refers to the mechanism that allows Node.js to handle multiple operations concurrently without the need for multi-threading.
-- Node.js operates on a single thread, meaning it has only one main execution thread for JavaScript code.
-- Node.js uses non-blocking I/O operations. When a function initiates an I/O operation (e.g., reading a file or making a network request), it doesn't wait for the operation to complete. Instead, it continues executing other tasks.
-- Node.js follows an event-driven architecture. Events are generated when I/O operations or other asynchronous tasks complete. These events are placed in an event queue.
-- The event loop continuously checks the event queue for new events. If there is an event, it is processed, and the associated callback function is executed.
-- Callback functions are essential in Node.js. When an asynchronous operation is initiated, a callback function is provided. When the operation completes, the associated callback is added to the event queue.
-- Through the event loop, Node.js can handle multiple concurrent operations. While one operation is waiting for I/O, the event loop can execute other tasks, ensuring efficient use of resources.
-- The Node.js event loop is the mechanism that enables asynchronous, non-blocking I/O operations and facilitates the handling of multiple tasks concurrently within a single-threaded environment.
-- Node.js constantly executes the event loop, and every iteration of it we call a **tick**.
-- **Node.js** initializes the **event loop** on start, and each iteration has a set of **phases** defining an order of operations.
-- Every **phase** has its queue of functions to execute.
-- Phases of **Event Loop**:
-    - **Timers**
-        - The first phase is the **timers**. During that phase, the event loop executes callbacks scheduled by the **setTimeout** and **setInterval**.
-        - The  **setTimeout** function specifies a timer with a **threshold** after which the provided callback should be executed rather than the exact time. 
-        - The **setInterval** function to execute repeatedly with a certain time delay between each call.
-        - The **setInterval** delays the function regularly regardless of the state of the previous function call.
-        - The recursive **setTimeout**, on the other hand, schedules a new function call when the previous one ends.
-    - **Pending callbacks, idle, and prepare**
-        - **Pending callbacks** phase executes callbacks for some systems operations, such as TCP errors.
-        - The next phases we call **idle** and **prepare**, but the Node.js only uses them internally.
-    - **Poll**
-        - Input/Output related callbacks execute during the **poll** phase.
-        - For example, the ones connected to the **File System** module.
-        - Node.js waits a bit for new events to come up here and execute them immediately.
-    - **Check**
-        - The **check** phase runs immediately after the **poll** phase and invokes callbacks set up using the  **setImmediate** function.
-        - It is designed to execute a script once the current **poll** phase completes.
-        - Node.js waits a bit for new events to come up here and execute them immediately.
-    - **Close callbacks**
-        - In this phase, the ```close``` callbacks run. An example of that is the ```‘close‘``` event emitted when a socket is closed using the  ```socket.destroy()``` function.
-- ```process.nextTick```
-    - it is not technically part of the event loop.
-    - the ```process.nextTick``` fires immediately on the same phase that the event loop currently is.
+- The Node.js event loop is a fundamental concept in the Node.js runtime environment, enabling the handling of multiple operations concurrently on a single thread.
+- Node.js operates on a single thread, utilizing non-blocking I/O operations for efficient task execution.
+- The event loop follows an event-driven architecture, generating events upon completion of I/O operations or asynchronous tasks, placing them in an event queue.
+- Callback functions play a crucial role in Node.js, associated with asynchronous operations and added to the event queue upon completion.
+- Node.js constantly executes the event loop in iterations known as ticks, initializing it on start with phases defining the order of operations.
+- Phases of the Event Loop include Timers, Poll, Check, Close Callbacks, and process.nextTick.
+- Timers phase executes callbacks scheduled by functions like setTimeout and setInterval, with setTimeout specifying a threshold for callback execution.
+- Pending callbacks phase handles callbacks for system operations, such as TCP errors.
+- Poll phase executes Input/Output related callbacks, waiting for events to execute them immediately.
+- Check phase runs after the Poll phase, invoking callbacks set up using the setImmediate function.
+- Close callbacks phase runs callbacks, such as the 'close' event emitted when a socket is closed using socket.destroy().
+- process.nextTick is not technically part of the event loop but fires immediately on the current phase, providing unique functionality.
+
+
+Explore advanced topics and continue your learning journey by visiting [Series-10](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-10). While this series provides Event Loop in Node.js, [Series-10](https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-10) focus on ``` Child Processes``` in Node.js. **Enjoy coding!**
+
+
 
 
 

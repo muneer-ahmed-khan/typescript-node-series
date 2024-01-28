@@ -8,3 +8,5 @@ fs.readFile(__filename, () => {
     console.log("set immediate");
   });
 });
+
+// If we run both  setTimeout and  setImmediate within the I/O cycle (for example in a callback after reading a file), the setImmediate is always called first
