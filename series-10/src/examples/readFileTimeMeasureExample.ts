@@ -1,11 +1,10 @@
 import { readFile } from "fs";
 
-console.time("myTimer");
-console.log("read the file.txt");
+console.time("File Read Time");
 
 readFile("./file.txt", () => {
   console.log("file read complete");
 
-  console.timeEnd("myTimer");
+  console.timeEnd("File Read Time");
   process.exit();
 });

@@ -1,6 +1,6 @@
 import { fork } from "child_process";
 
-const child = fork("./child.ts");
+const child = fork("./src/child.ts");
 
 child.send(20);
 

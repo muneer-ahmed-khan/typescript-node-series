@@ -4,6 +4,6 @@ import { spawn, exec } from "child_process";
 
 // give us the response in error first callback directly without using streams
 // it creates the shell
-exec("ls | grep .txt", (error, response) => {
+exec("ls src | grep .txt", (error, response) => {
   console.log(response);
 });
