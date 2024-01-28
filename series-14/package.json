@@ -1,20 +1,27 @@
 {
-  "name": "typescript-node-series-13",
+  "name": "typescript-node-series-14",
   "version": "1.0.0",
-  "description": "#13",
+  "description": "Node.js with TypeScript - Series-14",
   "main": "index.js",
   "scripts": {
-    "precompile": "tsc ./examples/child.ts && tsc ./examples/worker.ts",
-    "prestart": "npm run precompile",
-    "start": "ts-node ./main.ts"
-
+    "preecompile": "tsc ./src/examples/child.ts && tsc ./src/examples/worker.ts",
+    "presetart": "npm run precompile",
+    "start": "ts-node ./src/main.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "node",
+    "typescript",
+    "series-14"
+  ],
+  "author": "Muneer Ahmed",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muneer-ahmed-khan/typescript-node-series/tree/master/series-14"
   }
 }
